@@ -1,0 +1,15 @@
+@import '../../styles/variables.scss';
+.drafts {
+  p {
+    margin-bottom: 1rem;
+  }
+
+  &__items {
+    @include flex(column, flex-start, flex-start);
+    row-gap: 1rem;
+  }
+
+  li {
+    width: 100%;
+  }
+}

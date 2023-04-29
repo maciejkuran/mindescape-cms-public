@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+.newsletter {
+  &__items {
+    @include flex(column, flex-start, flex-start);
+    row-gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  li {
+    width: 100%;
+  }
+  &__item {
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+  }
+}

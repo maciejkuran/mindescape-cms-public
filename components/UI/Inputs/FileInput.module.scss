@@ -1,0 +1,31 @@
+@import '../../../styles/variables.scss';
+
+.file {
+  @include flex(row, flex-start, center);
+  &__input {
+    display: none;
+  }
+
+  &__label {
+    cursor: pointer;
+    border: $border;
+    border-radius: $border-radius;
+    padding: 1.1rem 3.5rem;
+    font-weight: 700;
+    @include flex(row, center, center);
+    transition: all 0.5s ease-in-out;
+    max-width: fit-content;
+  }
+
+  &__label:hover {
+    background-color: $grey1;
+  }
+
+  &__img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-left: 0.5rem;
+  }
+}

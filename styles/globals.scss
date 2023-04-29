@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap');
+
+@import './variables.scss';
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  background-color: $grey1;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  color: $black;
+}
+
+input,
+textarea,
+button {
+  font-family: 'Raleway', sans-serif;
+}
+
+svg {
+  color: $black;
+}
+
+button {
+  outline: none;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+input,
+textarea {
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+//font-sizes
+h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+h2,
+h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+h4,
+h5,
+h6 {
+  font-size: 2.3rem;
+  font-weight: 600;
+}
+
+p,
+a,
+li,
+button,
+input,
+textarea,
+span,
+time,
+legend {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+label,
+legend {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.tox-notification {
+  display: none !important;
+}
+
+::-webkit-scrollbar {
+  width: 9px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(182, 182, 182);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(147, 147, 147);
+}
+
+::-webkit-scrollbar-corner {
+  background-color: transparent;
+}
+
+@media (max-width: 785px) {
+  h1 {
+    font-size: 2.9rem;
+  }
+
+  h2,
+  h3 {
+    font-size: 2.2rem;
+  }
+
+  h4,
+  h5,
+  h6 {
+    font-size: 1.9rem;
+  }
+
+  p,
+  a,
+  li,
+  button,
+  input,
+  textarea,
+  span,
+  time {
+    font-size: 1.7rem;
+    font-weight: 500;
+  }
+}

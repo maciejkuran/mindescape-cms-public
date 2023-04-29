@@ -1,0 +1,39 @@
+@import '../../styles/variables.scss';
+
+.section {
+  @include flex(row, center, center);
+  height: 100vh;
+
+  &__form {
+    width: 50vw;
+    height: 100%;
+    background-color: $white;
+    @include flex(row, center, center);
+  }
+
+  &__img {
+    width: 50vw;
+    height: 100%;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+
+      vertical-align: middle;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .section {
+    &__form {
+      padding: 0 1rem;
+      width: 100vw;
+    }
+    &__img {
+      display: none;
+    }
+  }
+}

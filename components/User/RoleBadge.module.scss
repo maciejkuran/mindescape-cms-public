@@ -1,0 +1,18 @@
+@import '../../styles/variables.scss';
+
+.badge {
+  @include flex(row, center, center);
+  background-color: $grey1;
+  max-width: fit-content;
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: $border-radius;
+
+  svg {
+    height: 15px;
+    width: 15px;
+    margin-right: 0.3rem;
+    color: $yellow;
+  }
+}

@@ -1,0 +1,13 @@
+@import '../../styles/variables.scss';
+
+.messages {
+  &__items {
+    margin-top: 1rem;
+    @include flex(column, flex-start, flex-start);
+    row-gap: 1rem;
+  }
+
+  li {
+    width: 100%;
+  }
+}

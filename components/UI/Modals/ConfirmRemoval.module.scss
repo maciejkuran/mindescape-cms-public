@@ -1,0 +1,31 @@
+@import '../../../styles/variables.scss';
+
+.modal {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  max-width: 60rem;
+  width: 100%;
+  background-color: $grey1;
+  border: $border2;
+  z-index: 3;
+
+  &__btn {
+    margin: 0.5rem;
+
+    &--remove {
+      background-color: $red;
+    }
+
+    &--remove:hover {
+      background-color: $red2;
+    }
+  }
+
+  div {
+    margin-top: 2rem;
+    @include flex(row, flex-end, flex-end);
+    flex-wrap: wrap;
+  }
+}

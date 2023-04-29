@@ -1,0 +1,32 @@
+{
+  "name": "mindescape-cms",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@next/font": "13.2.4",
+    "@tinymce/tinymce-react": "^4.3.0",
+    "bcrypt": "^5.1.0",
+    "eslint": "8.37.0",
+    "eslint-config-next": "13.2.4",
+    "firebase": "^9.19.1",
+    "ipware": "^2.0.0",
+    "lodash": "^4.17.21",
+    "mongodb": "^5.2.0",
+    "next": "13.2.4",
+    "next-auth": "^4.22.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-loader-spinner": "^5.3.4",
+    "sass": "^1.60.0",
+    "swr": "^2.1.2"
+  }
+}

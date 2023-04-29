@@ -1,0 +1,11 @@
+@import '../../../styles/variables.scss';
+
+.comments__items {
+  margin-top: 1rem;
+  @include flex(column, flex-start, flex-start);
+  row-gap: 1rem;
+
+  li {
+    width: 100%;
+  }
+}

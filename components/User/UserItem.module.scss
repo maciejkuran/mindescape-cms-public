@@ -1,0 +1,26 @@
+@import '../../styles/variables.scss';
+
+.item {
+  width: 100%;
+
+  &__btn {
+    margin: 0.5rem;
+  }
+
+  &__btns {
+    @include flex(row, flex-end, flex-end);
+    flex-wrap: wrap;
+  }
+
+  &__user-data {
+    @include flex(column, flex-start, flex-start);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-top: $border2;
+    padding-top: 0.5rem;
+
+    span {
+      font-weight: 600;
+    }
+  }
+}

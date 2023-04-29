@@ -1,0 +1,90 @@
+@import '../styles/variables.scss';
+
+.home {
+  @include flex(row, flex-start, flex-start);
+  column-gap: 2rem;
+
+  h1,
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  &__wrapper {
+    @include flex(column, flex-start, flex-start);
+    max-width: 60rem;
+    width: 100%;
+    row-gap: 2rem;
+  }
+
+  &__box {
+    width: 100%;
+
+    &__btn {
+      margin-top: 3rem;
+    }
+
+    &--contribution {
+      span {
+        text-align: center;
+        display: block;
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin-bottom: 2rem;
+      }
+
+      &--trophy {
+        @include flex(row, center, center);
+
+        img {
+          width: 200px;
+          height: 100px;
+          object-fit: contain;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    &--drafts-info {
+      background: $gradient1;
+
+      span {
+        background-color: $green;
+        font-weight: 600;
+        padding: 0.1rem;
+      }
+    }
+
+    &__counter {
+      width: 100%;
+      height: 20px;
+      border: $border;
+      border-radius: $border-radius;
+      position: relative;
+      transition: all 500ms ease-in-out;
+
+      div {
+        position: absolute;
+        // width: 20%;
+        height: 100%;
+        background-color: $green;
+        border-radius: $border-radius;
+      }
+    }
+  }
+
+  &__img {
+    max-width: 60rem;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: $border-radius;
+    }
+  }
+}
+
+@media (max-width: 1015px) {
+  .home__img {
+    display: none;
+  }
+}

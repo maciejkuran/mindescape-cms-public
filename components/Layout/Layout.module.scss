@@ -1,0 +1,25 @@
+@import '../../styles/variables.scss';
+
+.layout {
+  @include flex(row, flex-start, flex-start);
+  max-width: 100vw;
+  width: 100%;
+
+  main {
+    width: 100%;
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 799px) {
+  .layout {
+    main {
+      margin: 1rem;
+    }
+  }
+
+  .layout__seperator {
+    height: 5rem;
+    width: 100%;
+  }
+}

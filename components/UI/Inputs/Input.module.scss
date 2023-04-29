@@ -1,0 +1,14 @@
+@import '../../../styles/variables.scss';
+
+.input {
+  border: $border2;
+  border-radius: $border-radius;
+  padding: 1rem 2rem;
+  width: 100%;
+  transition: transform 500ms ease-in-out;
+}
+
+.input:focus {
+  transform: scale(101%);
+  border-color: $grey5;
+}

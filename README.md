@@ -195,4 +195,6 @@ Fully responsive, optimized & designed for mobile devices. I designed an interfa
 
 I am pleased that I have accomplished that much. There's still plenty of room for improvement or other functionality development. I feel like this CMS is a perfect complex base and based on requirements, it can be easily adjusted and a lot of different features implemented.
 
+One additional functionality that could be implemented is filtering. E.g. filtering published articles, messages, users etc. The more data, the more this functionality could be useful. Filtering is quite simple to implement and, depending on what we would like to filter, it can be done at any time.
+
 At the planning stage of the application, I didn't think that I would implement so many different functionalities, especially in the area of security. The longer the project went on, the more excited I felt about the new solutions, and I couldn't even imagine the project without implementing them. Long story short, this project was an amazing experience!

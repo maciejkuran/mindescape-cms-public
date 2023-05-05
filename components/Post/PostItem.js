@@ -12,7 +12,6 @@ import Link from 'next/link';
 const PostItem = props => {
   const { removeModalActive, openModalHandler, closeModalHandler } = useRemoveModal();
   const { data: session } = useSession();
-  // console.log(session && session.user._id);
 
   const { _id, authorName, authorLastName, authorImage, title, creationDate, authorId } =
     props.articleData;

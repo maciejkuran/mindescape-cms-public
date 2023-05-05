@@ -18,7 +18,7 @@ export default function App({ Component, pageProps: { session, ...pageProps } })
     </Head>
   );
 
-  if (router.asPath === '/auth') {
+  if (router.asPath === '/auth' || router.asPath.includes('password-recovery')) {
     return (
       <SessionProvider session={session}>
         {defaultHead}

@@ -20,4 +20,18 @@
       margin-top: 2rem;
     }
   }
+
+  &__pw-recovery {
+    margin-top: 1rem;
+
+    a {
+      font-weight: 600;
+      font-size: 1.6rem;
+      padding: 0.2rem;
+    }
+
+    a:hover {
+      border-bottom: 2px solid $green;
+    }
+  }
 }

@@ -5,7 +5,8 @@ import { faStar } from '@fortawesome/free-solid-svg-icons';
 const RoleBadge = props => {
   return (
     <div className={classes.badge}>
-      <FontAwesomeIcon icon={faStar} /> {props.role}
+      <FontAwesomeIcon icon={faStar} />
+      {props.role}
     </div>
   );
 };

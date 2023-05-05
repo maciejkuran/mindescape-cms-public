@@ -15,8 +15,10 @@ const validateUserDataInputs = (reqBody, res) => {
   }
 
   //Validate if password contains at least 7 characters
-  if (password.length < 7) {
-    res.status(400).json({ message: 'Password must contain at least 7 characters.' });
+  if (password.length < 7 || password.length > 25) {
+    res.status(400).json({
+      message: 'Password must contain at least 7 characters and maximum 25 characters.',
+    });
     return false;
   }
 

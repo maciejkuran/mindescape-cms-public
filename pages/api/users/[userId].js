@@ -115,6 +115,23 @@ const handler = async (req, res) => {
     const users = database.collection('users');
     const { userId } = req.query;
 
+    //Validate if admin Maciej Kuran-Janowski (headadmin) is not the case of deletion request. If yes, reject.
+    try {
+      const user = await users.find({ _id: new ObjectId(userId) }).toArray();
+
+      if (user[0] && [user[0]._id.toString() === '643bce432b8db85949f82615']) {
+        res
+          .status(401)
+          .json({ message: 'Rejected. Requesting deletion the head admin acccount is forbidden.' });
+        client.close();
+        return;
+      }
+    } catch (error) {
+      res
+        .status(500)
+        .json({ message: 'Some problem occured while deleting a user from the database.' });
+    }
+
     try {
       await users.deleteOne({ _id: new ObjectId(userId) });
       res.status(200).json({ message: 'User has been successfully deleted.' });

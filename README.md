@@ -30,7 +30,9 @@ I am featuring my first complex full stack web application. I split the project 
 
 ## 1. About ⚡
 
-Mindescape CMS is a custom content management system built for any blog-type website. Mindescape comes from the words (mind + escape) and is the brand that supports worldwide contemporary independent artists. Any blog-type web application requires some management system where you can publish/save drafts/edit/remove articles, manage comments, users, etc. It's what my custom CMS is developed for.
+Mindescape CMS is a custom content management system built for any blog-type website. Fully responsive, optimized & designed for mobile devices. 
+
+Mindescape comes from the words (mind + escape) and is the brand that supports worldwide contemporary independent artists. Any blog-type web application requires some management system where you can publish/save drafts/edit/remove articles, manage comments, users, etc. It's what my custom CMS is developed for.
 
 Despite the name and current application branding, my CMS can easily be transformed, customized, and plugged into any other brand/web application. You will find information about the capabilities of the application in the following sections.
 
@@ -183,7 +185,7 @@ Please note that `admin` will have access to all private routes, while `editor` 
 
 ## 7. UI Design
 
-I designed an interface that is clear and user-friendly. Everything is intuitive and easy to understand. In the case of irreversible decisions, the user will be greeted by a modal confirming, for example, the permanent removal of an item from the database. Below I present the selected application screenshots. Feel free to sign in with the shared credentials and test the application by yourself.
+Fully responsive, optimized & designed for mobile devices. I designed an interface that is clear and user-friendly. Everything is intuitive and easy to understand. In the case of irreversible decisions, the user will be greeted by a modal confirming, for example, the permanent removal of an item from the database. Below I present the selected application screenshots. Feel free to sign in with the shared credentials and test the application by yourself.
 
 <p align="center">
   <img src="/public/images/ui.png">

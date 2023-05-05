@@ -4,7 +4,7 @@
 
 # Content Management System
 
-👋 Welcome to the public version of my repo.
+👋 **Welcome to the public version of my repo.**
 
 I am featuring my first complex full stack web application. I split the project documentation into the following sections:
 

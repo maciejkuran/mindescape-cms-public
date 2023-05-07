@@ -163,6 +163,9 @@ I memoized the functions that needed to be passed as dependencies to the `useEff
 
 Please note that `admin` will have access to all private routes, while `editor` may not have access. The table below shows all API endpoints and indicates those that are public.
 
+CORS - enabled.
+
+
 | Route                                   | Methods          | Public | Notes                                                         |
 | --------------------------------------- | ---------------- | ------ | ------------------------------------------------------------- |
 | /api/articles                           | GET, POST, PATCH | GET    | When a public `fetch` request, the data returned will differ. |

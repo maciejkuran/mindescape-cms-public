@@ -6,7 +6,7 @@
 
 👋 **Welcome to the public version of my repo.**
 
-I am featuring my first complex full stack web application. I split the project documentation into the following sections:
+I am featuring my full stack web application. I split the project documentation into the following sections:
 
 1. About
 2. Tech Stack

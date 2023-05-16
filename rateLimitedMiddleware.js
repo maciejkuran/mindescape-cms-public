@@ -1,6 +1,6 @@
 import { get, set } from 'lodash';
 
-const rateLimit = 10; // Number of allowed requests per minute
+const rateLimit = 15; // Number of allowed requests per minute
 
 export const checker = (ip, rateLimiter) => {
   const now = Date.now();

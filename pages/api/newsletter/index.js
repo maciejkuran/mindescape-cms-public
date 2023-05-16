@@ -11,6 +11,12 @@ const handler = async (req, res) => {
 
   if (!rateLimitOk) return;
 
+  if (req.method === 'OPTIONS') {
+    return res.status(200).json({
+      body: 'OK',
+    });
+  }
+
   if (req.method !== 'GET' && req.method !== 'POST') {
     res.status(400).json({ message: 'Invalid request method. Accepted methods: GET, POST' });
     return;
@@ -48,6 +54,11 @@ const handler = async (req, res) => {
   if (req.method === 'POST') {
     //Expected req.body object = {email: 'user@email.com'};
     const { email } = req.body;
+
+    if (!email) {
+      res.status(400).json({ message: 'Email input cannot be empty.' });
+      return;
+    }
 
     let client;
 

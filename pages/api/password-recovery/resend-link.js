@@ -5,6 +5,13 @@ const nodemailer = require('nodemailer');
 const inLineCss = require('nodemailer-juice');
 
 const handler = async (req, res) => {
+  //Preventing CORS issues.If you try to send a DELETE, PUT, etc.. request , the preflight will send it’s ‘first army’ to check the ‘battle field’. But this army is not the request itself, but an OPTION request. That’s why in our API we need to handle OPTION request.
+  if (req.method === 'OPTIONS') {
+    return res.status(200).json({
+      body: 'OK',
+    });
+  }
+
   if (req.method !== 'POST') {
     res.status(400).json({ message: 'Invalid request method. Accepted method: POST' });
     return;

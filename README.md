@@ -118,7 +118,7 @@ Most of the API Routes are private - not accessible if `!isAuthenticated` or `to
 
 Rate limiting is a strategy for limiting network traffic and stopping potential API abuse. Every API route has its own `rateLimiter` variable that stores user requests `timestamps` - that's all in a nutshell.
 
-`10` is the number of allowed requests per minute per each API route.
+`15` is the number of allowed requests per minute per each API route.
 
 ### User Data
 
@@ -163,27 +163,29 @@ I memoized the functions that needed to be passed as dependencies to the `useEff
 
 Please note that `admin` will have access to all private routes, while `editor` may not have access. The table below shows all API endpoints and indicates those that are public.
 
-CORS - enabled.
+**CORS is enabled.**
 
-| Route                                   | Methods          | Public | Notes                                                         |
-| --------------------------------------- | ---------------- | ------ | ------------------------------------------------------------- |
-| /api/articles                           | GET, POST, PATCH | GET    | When a public `fetch` request, the data returned will differ. |
-| /api/article-id/{id}                    | DELETE           | null   |                                                               |
-| /api/article-title/{article-title}      | GET              | All    |                                                               |
-| /api/author-id/{id}                     | GET              | All    |                                                               |
-| /api/comments/${articleId}/             | POST             | All    |                                                               |
-| /api/comments/${articleId}/${commentId} | DELETE           | null   |                                                               |
-| /api/drafts                             | GET, POST, PATCH | null   |                                                               |
-| /api/drafts/${articleId}                | DELETE           | null   |                                                               |
-| /api/drafts/${articleTitle}             | GET              | null   |                                                               |
-| /api/messages                           | GET, POST, PATCH | POST   |                                                               |
-| /api/messages/${messageId}              | DELETE           | null   |                                                               |
-| /api/newsletter                         | GET, POST        | POST   |                                                               |
-| /api/password-recovery                  | POST, PATCH      | All    |                                                               |
-| /api/password-recovery/resend-link      | POST             | All    |                                                               |
-| /api/users                              | GET, POST        | null   |                                                               |
-| /api/users/${userId}                    | PATCH, DELETE    | null   |                                                               |
-| /api/image                              | POST             | null   |                                                               |
+Please note that returned data in `GET` request may differ depending on if `isAuthenticated` or if `!isAuthenticated`.
+
+| Route                                   | Methods          | Public |
+| --------------------------------------- | ---------------- | ------ |
+| /api/articles                           | GET, POST, PATCH | GET    |
+| /api/article-id/{id}                    | DELETE           | null   |
+| /api/article-title/{article-title}      | GET              | All    |
+| /api/author-id/{id}                     | GET              | All    |
+| /api/comments/${articleId}              | GET, POST        | All    |
+| /api/comments/${articleId}/${commentId} | DELETE           | null   |
+| /api/drafts                             | GET, POST, PATCH | null   |
+| /api/drafts/${articleId}                | DELETE           | null   |
+| /api/drafts/${articleTitle}             | GET              | null   |
+| /api/messages                           | GET, POST, PATCH | POST   |
+| /api/messages/${messageId}              | DELETE           | null   |
+| /api/newsletter                         | GET, POST        | POST   |
+| /api/password-recovery                  | POST, PATCH      | All    |
+| /api/password-recovery/resend-link      | POST             | All    |
+| /api/users                              | GET, POST        | null   |
+| /api/users/${userId}                    | PATCH, DELETE    | null   |
+| /api/image                              | POST             | null   |
 
 ## 7. UI Design
 

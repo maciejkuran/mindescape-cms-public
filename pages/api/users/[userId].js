@@ -29,6 +29,12 @@ const handler = async (req, res) => {
   const { password, email, userId } = req.body;
 
   if (req.method === 'PATCH') {
+    //As the sign in credentials are exposed in public repo, I dont want strangers to change head admin password and other data!!!!!!!!!!!!!!!!!!
+    if (userIdSlug === '643bce432b8db85949f82615') {
+      res.status(401).json({ message: 'No permission to change this account data.' });
+      return;
+    }
+
     const userInputsOk = validateUserDataInputs(req.body, res);
     const token = await getToken({ req });
 

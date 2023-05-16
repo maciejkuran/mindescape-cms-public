@@ -104,6 +104,8 @@
     z-index: 3;
     transition: transform 400ms ease-in-out;
     overflow: auto;
+    min-height: 100%;
+    padding-bottom: 15vh; //url bar in mobile (if not hidden) may cut some nav content
   }
 
   .nav--active {

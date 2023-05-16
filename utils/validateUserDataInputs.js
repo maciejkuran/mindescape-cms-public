@@ -1,7 +1,7 @@
 const validateUserDataInputs = (reqBody, res) => {
   const { name, lastName, email, password, confirmPassword } = reqBody;
 
-  if (name === '' || lastName === '' || email === '' || password === '' || confirmPassword === '') {
+  if (!name || !lastName || !email || !password || !confirmPassword) {
     res
       .status(400)
       .json({ message: 'Submission failed. Required inputs: name, last name, email, password.' });

@@ -43,8 +43,8 @@ Despite the name and current application branding, my CMS can easily be transfor
 | Next.js  | Next.js | MongoDB  | Firebase | Figma            | NextAuth                        |
 | React    |         |          |          | Font Awesome     | tinyMCE                         |
 | Sass     |         |          |          | Unsplash         | Bcrypt                          |
-|          |         |          |          | app.diagrams.net | Nodemailer                      |
-|          |         |          |          |                  | Nodemailer-juice                |
+|          |         |          |          | Pixabay          | Nodemailer                      |
+|          |         |          |          | app.diagrams.net | Nodemailer-juice                |
 |          |         |          |          |                  | Lodash                          |
 |          |         |          |          |                  | Ipware                          |
 |          |         |          |          |                  | Super strong password generator |

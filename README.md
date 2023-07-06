@@ -28,6 +28,16 @@ I am featuring my full stack web application. I split the project documentation 
 
 ---
 
+---
+
+👋 Mindescape blog website
+
+[🔗 LIVE WEBSITE](https://mindescape-demo.vercel.app/)
+
+*This project is a complement to the Mindescape CMS project.
+
+---
+
 ## 1. About ⚡
 
 Mindescape CMS is a custom content management system built for any blog-type website. Fully responsive, optimized & designed for mobile devices.

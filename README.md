@@ -28,7 +28,7 @@ I am featuring my full stack web application. I split the project documentation 
 
 ---
 
-**👉 Mindescape blog website**
+**👉 Mindescape blog website - a blog for the end user**
 
 [🔗 LIVE WEBSITE](https://mindescape-demo.vercel.app/)
 
